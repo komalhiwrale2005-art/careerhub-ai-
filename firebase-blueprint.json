@@ -1,0 +1,55 @@
+{
+  "collections": {
+    "users": {
+      "description": "Standard user profiles populated upon first Google Sign-In authentication flow.",
+      "schema": {
+        "uid": "string",
+        "email": "string",
+        "displayName": "string",
+        "photoURL": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "applications": {
+      "description": "Job application records for visa sponsorship tracking.",
+      "schema": {
+        "id": "string",
+        "userId": "string",
+        "jobId": "string",
+        "jobTitle": "string",
+        "company": "string",
+        "logoBg": "string",
+        "status": "string",
+        "appliedDate": "string",
+        "timeline": "array",
+        "notes": "string"
+      }
+    },
+    "saved_jobs": {
+      "description": "Tracks jobs that have been bookmarked/saved by specific users.",
+      "schema": {
+        "userId": "string",
+        "jobId": "string",
+        "savedAt": "timestamp"
+      }
+    },
+    "user_profiles": {
+      "description": "User-specific settings and ATS resume evaluation scores.",
+      "schema": {
+        "userId": "string",
+        "userScore": "number",
+        "updatedAt": "timestamp"
+      }
+    },
+    "chats": {
+      "description": "Multi-turn Gemini chat threads with saved context.",
+      "schema": {
+        "chatId": "string",
+        "userId": "string",
+        "title": "string",
+        "messages": "array",
+        "updatedAt": "timestamp"
+      }
+    }
+  }
+}

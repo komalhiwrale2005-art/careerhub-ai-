@@ -1,0 +1,6 @@
+{
+  "name": "Global Career Hub AI",
+  "description": "A world-class, premium job portal for international career growth featuring glassmorphism design, interactive Aetheric Flow visuals, an ATS Resume Analyzer, and AI-powered Mock Interviews.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
